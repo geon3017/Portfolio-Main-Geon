@@ -27,6 +27,10 @@
     font-size: clamp(2.5rem, -0.121rem + 3.2258vw, 3.75rem);
     text-transform: capitalize;
   }
+  header .main-menu .sub-menu .circle{
+    animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
+  }
+  
   header .main-menu .main-text h2{
     padding-top: 50px;
     padding-left: 4vw;
@@ -60,13 +64,21 @@
   header .main-txt .sub-txt p{
     width: 30vw;
     margin-right: 20px;
+    
   }
-  header .main-txt .sub-txt .rotate{
-    background: url(./emoji/scroll.svg) no-repeat 50% /contain;
+
+  header .main-txt .sub-txt .rotate img{
+    /* background: url(./emoji/scroll.svg) no-repeat 50% /contain; */
     width: 7vw;
     height: 100px;
-    text-indent: -9999px;
+    /* text-indent: -9999px; */
     margin: 0 20px;
+    animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
+  }
+  @keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+      }
   }
   header .main-menu .main-txt .semoji img{
     margin: 0 20px;
@@ -90,6 +102,31 @@
   /***** projects *****/
   .projects .expl{
     margin: 850px 200px 450px;
+    position: relative;
+  }
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }
+  .projects .pul{
+    background: url(./reference-image/violet-gradient.png) no-repeat 50% / cover;
+    width: 100%;
+    height: 100vh;
+    text-indent: -9999px;
+    z-index: -9999;
+    position: absolute;
+    top: 100vw;
+    right: 45vw;
+  }
+  .expl {
+      position: relative;
+      animation: fadeInUp 1s;
   }
   .projects .expl h2{
     font-size: 3.75rem;
@@ -213,21 +250,47 @@
   }
 
   /****** Slogan ******/
-  .Slogan{
-    margin-top: 250px;
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+  .viewBox{
+    width: 100%;
+    height: 100%;
+    margin-top: 300px;
+    overflow: hidden;
+  }
+  .slideBox{
+    width: 200%;
+    height: 100%;
+    display: flex;
+    animation: flowText 10s linear infinite;
+  }
+  .leftbox, .rightbox{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-transform: capitalize;
   }
-  .Slogan p{
-    font-size: 145px; /*200px*/
+  .slideItem{
+    font-size: clamp(9.0625rem, 1.8548rem + 8.871vw, 12.5rem);
+    font-weight: 300;
+    color: #fff;
+    padding: 0 10px;
+  }
+  @keyframes flowText{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-50%);}
   }
   .grn{
     display: flex;
     justify-content: center;
-    align-items: c;
     margin: 219px 0;
   }
   .grn img{
     width: 115px;
+  }
+  .grn .circle-green{
+    animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
   }
 
   /****** about me ******/

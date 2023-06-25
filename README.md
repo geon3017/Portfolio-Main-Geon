@@ -13,7 +13,11 @@
 # 230621 포토폴리오에 들어갈 내용 작성중
 # 230623 드디어 디자인작업 완료 지금 퍼블리싱 작업중
 # 230623 아직 한참 남았다....
-# 230624 https://getcssscan.com/css-box-shadow-examples 그림자 사이트
+# 230624 https://getcssscan.com/css-box-shadow-examples (그림자 사이트)
 # 230624 css완료 내일은 js&jQuery 작성
 # 230624 BoyWithUke [Rockstar]
+# 230625 https://tobiasahlin.com/moving-letters/ (js 텍스트 애니메이션)
+### https://elvanov.com/2195  스크롤에 따라 부드러운 애니메이션 구현하기
+### https://alvarotrigo.com/blog/css-animations-scroll/ 
+### https://nykim.work/56
 
