@@ -21,7 +21,7 @@
     background: url(./emoji/little-star-white.svg) no-repeat 50% / contain;
     width: 70px;
     height: 70px;
-    text-indent: -9999px;
+    text-indent: -99999px;
   }
   header .main-menu .sub-menu li:nth-child(3){
     font-size: clamp(2.5rem, -0.121rem + 3.2258vw, 3.75rem);
@@ -101,10 +101,15 @@
   }
   /***** projects *****/
   .projects .expl{
-    margin: 850px 200px 450px;
+    margin: 850px -200px 450px;
     position: relative;
+    /* animation: fadeInUp 1s; */
+    opacity:0;
+    /* margin-left:-300px;     */
+    max-width:100%;
+    
   }
-  @keyframes fadeInUp {
+  /* @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
@@ -113,7 +118,7 @@
         opacity: 1;
         transform: translateZ(0);
     }
-  }
+  } */
   .projects .pul{
     background: url(./reference-image/violet-gradient.png) no-repeat 50% / cover;
     width: 100%;
@@ -124,10 +129,6 @@
     top: 100vw;
     right: 45vw;
   }
-  .expl {
-      position: relative;
-      animation: fadeInUp 1s;
-  }
   .projects .expl h2{
     font-size: 3.75rem;
     margin-bottom: 111px;
@@ -136,7 +137,16 @@
     width: 800px;
     font-size: 1.875rem;
   }
-
+  .projects .project-menu .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+    margin-bottom: 200px;
+    position: relative;
+    opacity:0; 
+  }
+  
   .projects .project-menu .box img{
     max-width: 33.2%;
     border-radius: 50px;
@@ -144,14 +154,6 @@
   }
   .projects .project-menu .box p{
     width: 450px;
-  }
-  .projects .project-menu .box{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 80px;
-    margin-bottom: 200px;
-    position: relative;
   }
   .projects .project-menu .row-reverse{
     flex-direction: row-reverse;
@@ -203,31 +205,49 @@
   .projects .project-menu .box .box-img{
     border-radius: 50px;
     position: absolute;
-    top: 5vw;
+    top: 4vw;
     left: 61.5vw;
   }
   .projects .project-menu .box .row{
     border-radius: 50px;
     position: absolute;
-    top: 5vw;
+    top: 4vw;
     left: 0;
   }
 
   /****** technology stack ******/
   .technology {
     margin-top: 480px;
+    position: relative;
+  }
+  .technology .violet-grad{
+    background: url(./reference-image/violet-gradient.png) no-repeat 50% / cover;
+    width: 100%;
+    height: 100vh;
+    text-indent: -9999px;
+    z-index: -9999;
+    position: absolute;
+    top: -35vw;
+    right: 50vw;
+    
+  }
+  .technology .violet-grad{
+    margin: 0;
+    padding: 0;
+    z-index: -9999;
   }
   .technology h3{
     font-size: clamp(3.125rem, 2.4698rem + 0.8065vw, 3.4375rem);
     margin-left: 120px;
     margin-bottom: 140px;
+    text-transform: capitalize;
   }
   .technology h2{
     font-size: clamp(6.5625rem, 3.9415rem + 3.2258vw, 7.8125rem);
     text-align: center;
     padding-bottom: 20px;
     /* width: 100%; */
-    position: relative;
+    /* position: relative; */
   }
   .technology .stack{
     display: flex;
@@ -248,6 +268,23 @@
   .technology .stack h2{
     margin-left: 10px;
   }
+  .technology .stack p{
+    margin-left: 50px;
+    display: none;
+  }
+  .technology .stack:hover p{
+    display: block;
+  }
+  .technology .stack p {
+    opacity: 0;
+  }
+  
+  @keyframes fade {
+    to {
+      opacity: 1;
+    }
+  }
+ 
 
   /****** Slogan ******/
   *{margin: 0; padding: 0; box-sizing: border-box;}

@@ -17,3 +17,79 @@ window.onscroll = function () {
     purple.style.transform = "rotate(" + window.pageYOffset/15 + "deg)";
     
     }
+    // .technology .stack
+    const introText = document.querySelectorAll("p");
+
+    window.onload = () => {
+    let timer = 100;
+    introText.forEach((item) => {
+        item.style.animation = `fade 100ms ${(timer += 50)}ms forwards`;
+    });
+    };
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+                
+    //         $('.projects .project-menu .box').each( function(i){
+                
+    //             var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+    //             var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+    //             if( bottom_of_window > bottom_of_element ){
+    //                 $(this).animate({'opacity':'1'},700);
+    //             }
+                
+    //         }); 
+    //     });
+    // });
+
+    // .projects .project-menu
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.projects .project-menu .box').each( function(i){
+                
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1', 'padding':'150px'},1000);
+                }
+        
+            }); 
+        });
+    });
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+    //         $('.projects .project-menu .row-reverse').each( function(i){
+                
+    //             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //             var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+    //             if( bottom_of_window > bottom_of_element ){
+    //                 $(this).animate({'opacity':'1','margin-right':'0px'},1000);
+    //             }
+                
+    //         }); 
+    //     });
+    // });
+
+
+    // .projects .expl
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.projects .expl').each( function(i){
+                
+                var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                if( bottom_of_window > bottom_of_element ){
+                    $(this).animate({'opacity':'1','margin-left':'150px'},1000);
+                }
+                
+            }); 
+        });
+    });
+
+
+

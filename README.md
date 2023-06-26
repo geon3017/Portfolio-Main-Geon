@@ -20,4 +20,5 @@
 ### https://elvanov.com/2195  스크롤에 따라 부드러운 애니메이션 구현하기
 ### https://alvarotrigo.com/blog/css-animations-scroll/ 
 ### https://nykim.work/56
+### hover를 부드러운 작용이 안된다....
 
