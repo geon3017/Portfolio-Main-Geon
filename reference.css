@@ -270,22 +270,16 @@
   }
   .technology .stack p{
     margin-left: 50px;
+    right: 200px;
+    /* left: 500px; */
     display: none;
   }
-  .technology .stack:hover p{
-    display: block;
-  }
-  .technology .stack p {
-    opacity: 0;
-  }
-  
-  @keyframes fade {
-    to {
-      opacity: 1;
-    }
+  .technology .stack:hover {
+    /* display: block; */
+    transform: translate(-50px);
+    transition: 0.5s;
   }
  
-
   /****** Slogan ******/
   *{margin: 0; padding: 0; box-sizing: border-box;}
   .viewBox{
