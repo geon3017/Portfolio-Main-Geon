@@ -67,60 +67,13 @@ window.onscroll = function () {
 
 
     // 롤링
-    $(document).ready(function(){
-                       
-        jQuery(function ($) {
-             var ticker = function () {
-                 timer = setTimeout(function () {
-                     $('header .main-menu .main-text li:first').animate({
-                         marginTop: '-60px'
-                     }, 600, function () {
-                         $(this).detach().appendTo('header .main-menu .main-text').removeAttr('style');
-                     });
-                     ticker();
-                 }, 3000);
-             };
-
-
-             //4 마우스를 올렸을 때 기능 정지
-             var tickerover = function () {
-                 $('header .main-menu .main-text').mouseover(function () {
-                     clearTimeout(timer);
-                 });
-                 $('header .main-menu .main-text').mouseout(function () {
-                     ticker();
-                 });
-             };
-             tickerover();
-             // 4 끝
-             ticker();
-         });
-     });
-
-    // document.addEventListener('DOMContentLoaded', ()=>{
-    //     var interval = window.setInterval(rollingCallback, 3000);
-    // })
-    // function rollingCallback(){
-    //     //.prev 클래스 삭제
-    //     document.querySelector('header .main-menu .main-text .prev').classList.remove('prev');
-    
-    //     //.current -> .prev
-    //     let current = document.querySelector('header .main-menu .main-text .current');
-    //     current.classList.remove('current');
-    //     current.classList.add('prev');
-    
-    //     //.next -> .current
-    //     let next = document.querySelector('header .main-menu .main-text .next');
-    //     //다음 목록 요소가 널인지 체크
-    //     if(next.nextElementSibling == null){
-    //         document.querySelector('header .main-menu .main-text ul li:first-child').classList.add('next');
-    //     }else{
-    //         //목록 처음 요소를 다음 요소로 선택
-    //         next.nextElementSibling.classList.add('next');
-    //     }
-    //     next.classList.remove('next');
-    //     next.classList.add('current');
-    // }
-
+    setInterval(function(){
+        $('#slide2>ul').delay(3000);
+        $('#slide2>ul').animate({marginTop: "-200px"})
+        $('#slide2>ul').delay(3000);
+        $('#slide2>ul').animate({marginTop: "-400px"})
+        $('#slide2>ul').delay(3000);
+        $('#slide2>ul').animate({marginTop: "0px"})
+    });
 
 

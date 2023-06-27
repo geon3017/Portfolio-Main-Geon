@@ -31,69 +31,21 @@
     animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
   }
  /**** 아래 롤링 연습 작업 *****/
-  /* * {margin:0; padding:0;} */
-  /* header .main-menu {
+ #index_02 {
+  display: flex;
+  font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
+ }
+  #slide2{
+    margin-top: 2vw;
+    height: 200px;
     overflow: hidden;
-    position: relative;
+    margin-left: 5vw;
   }
-  .ani > li {
-    font-weight: 600; 
-    margin: 10px 0; 
-    box-sizing: border-box;
-    list-style: none;
-    overflow:hidden ;
-    position: absolute;
-    top: 8vw;
-    right: 9vw;
-  } 
-  header .main-menu .main-text .roll{
-    height: 60px; overflow: hidden; 
+  #slide2>ul{
+    height: 700px;
   }
-  header .main-menu .main-text .roll li{
-    height: 60px; width: 100%; line-height: 60px;
-  } */
-
-  header .main-menu ul{
-    position: relative;
-    width: auto;
-    height: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  header .main-menu .main-text li{
-    margin-top: 8vw;
-    position: absolute;
-    top: -36px;
-    left: 40vw;
-    list-style: none;
-    overflow: hidden;
-  }
-  header .main-menu .main-text li.prev{
-    top: 36px;
-    transition: top 0.5s ease;
-  }
-  header .main-menu .main-text li.current{
-    top: 36px;
-    transition: top 0.5s ease;
-  }
-  header .main-menu .main-text li.next{
-    top: 36px;
-    transition: top 0.5s ease;
-  }
-  header .main-menu .main-text h2{
-    display: block;
-    display: -webkit-box;
-    text-decoration: none;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient:vertical;
-    overflow: hidden;
-    color: #fff;
-    
-  }
-  header .main-menu .main-text .roll{
-    display: flex;
-    justify-content: left;
-    overflow: hidden;
+  #slide2>ul>li{
+    height: 200px;
   }
   /****** 위 롤링연습작업 *****/
   header .main-menu .main-text h2{
@@ -106,7 +58,7 @@
     text-align: center;
     padding-left: 35vw;
     font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
-    line-height: 1.7;
+    line-height: 1.3;
   }
   header .main-txt{
     display: flex;
