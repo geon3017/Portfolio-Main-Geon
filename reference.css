@@ -53,7 +53,7 @@
     height: 60px; width: 100%; line-height: 60px;
   } */
 
-  header .main-menu > ul{
+  header .main-menu ul{
     position: relative;
     width: auto;
     height: 100%;
@@ -66,6 +66,7 @@
     top: -36px;
     left: 40vw;
     list-style: none;
+    overflow: hidden;
   }
   header .main-menu .main-text li.prev{
     top: 36px;
