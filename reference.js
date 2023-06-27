@@ -17,33 +17,7 @@ window.onscroll = function () {
     purple.style.transform = "rotate(" + window.pageYOffset/15 + "deg)";
     
     }
-    // .technology .stack
-    const introText = document.querySelectorAll("p");
-
-    window.onload = () => {
-    let timer = 100;
-    introText.forEach((item) => {
-        item.style.animation = `fade 100ms ${(timer += 50)}ms forwards`;
-    });
-    };
-
-    // $(document).ready(function() {
-    //     $(window).scroll( function(){
-                
-    //         $('.projects .project-menu .box').each( function(i){
-                
-    //             var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
-    //             var bottom_of_window = $(window).scrollTop() + $(window).height();
-                
-    //             if( bottom_of_window > bottom_of_element ){
-    //                 $(this).animate({'opacity':'1'},700);
-    //             }
-                
-    //         }); 
-    //     });
-    // });
-
-    // .projects .project-menu
+    // .projects .project-menu 프로젝트 부분
     $(document).ready(function() {
         $(window).scroll( function(){
             $('.projects .project-menu .box').each( function(i){
@@ -75,7 +49,7 @@ window.onscroll = function () {
     // });
 
 
-    // .projects .expl
+    // .projects .expl 목차부분
     $(document).ready(function() {
         $(window).scroll( function(){
             $('.projects .expl').each( function(i){
@@ -90,6 +64,63 @@ window.onscroll = function () {
             }); 
         });
     });
+
+
+    // 롤링
+    $(document).ready(function(){
+                       
+        jQuery(function ($) {
+             var ticker = function () {
+                 timer = setTimeout(function () {
+                     $('header .main-menu .main-text li:first').animate({
+                         marginTop: '-60px'
+                     }, 600, function () {
+                         $(this).detach().appendTo('header .main-menu .main-text').removeAttr('style');
+                     });
+                     ticker();
+                 }, 3000);
+             };
+
+
+             //4 마우스를 올렸을 때 기능 정지
+             var tickerover = function () {
+                 $('header .main-menu .main-text').mouseover(function () {
+                     clearTimeout(timer);
+                 });
+                 $('header .main-menu .main-text').mouseout(function () {
+                     ticker();
+                 });
+             };
+             tickerover();
+             // 4 끝
+             ticker();
+         });
+     });
+
+    // document.addEventListener('DOMContentLoaded', ()=>{
+    //     var interval = window.setInterval(rollingCallback, 3000);
+    // })
+    // function rollingCallback(){
+    //     //.prev 클래스 삭제
+    //     document.querySelector('header .main-menu .main-text .prev').classList.remove('prev');
+    
+    //     //.current -> .prev
+    //     let current = document.querySelector('header .main-menu .main-text .current');
+    //     current.classList.remove('current');
+    //     current.classList.add('prev');
+    
+    //     //.next -> .current
+    //     let next = document.querySelector('header .main-menu .main-text .next');
+    //     //다음 목록 요소가 널인지 체크
+    //     if(next.nextElementSibling == null){
+    //         document.querySelector('header .main-menu .main-text ul li:first-child').classList.add('next');
+    //     }else{
+    //         //목록 처음 요소를 다음 요소로 선택
+    //         next.nextElementSibling.classList.add('next');
+    //     }
+    //     next.classList.remove('next');
+    //     next.classList.add('current');
+    // }
 
 
 

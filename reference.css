@@ -30,7 +30,68 @@
   header .main-menu .sub-menu .circle{
     animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
   }
-  
+ 
+  /* * {margin:0; padding:0;} */
+  /* header .main-menu {
+    overflow: hidden;
+    position: relative;
+  }
+  .ani > li {
+    font-weight: 600; 
+    margin: 10px 0; 
+    box-sizing: border-box;
+    list-style: none;
+    overflow:hidden ;
+    position: absolute;
+    top: 8vw;
+    right: 9vw;
+  } 
+  header .main-menu .main-text .roll{
+    height: 60px; overflow: hidden; 
+  }
+  header .main-menu .main-text .roll li{
+    height: 60px; width: 100%; line-height: 60px;
+  } */
+  header .main-menu > ul{
+    position: relative;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  header .main-menu .main-text li{
+    margin-top: 8vw;
+    position: absolute;
+    top: -36px;
+    left: 40vw;
+    list-style: none;
+  }
+  header .main-menu .main-text li.prev{
+    top: 36px;
+    transition: top 0.5s ease;
+  }
+  header .main-menu .main-text li.current{
+    top: 36px;
+    transition: top 0.5s ease;
+  }
+  header .main-menu .main-text li.next{
+    top: 36px;
+    transition: top 0.5s ease;
+  }
+  header .main-menu .main-text h2{
+    display: block;
+    display: -webkit-box;
+    text-decoration: none;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    color: #fff;
+    
+  }
+  header .main-menu .main-text .roll{
+    display: flex;
+    justify-content: left;
+  }
   header .main-menu .main-text h2{
     padding-top: 50px;
     padding-left: 4vw;
@@ -152,6 +213,10 @@
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
+  .projects .project-menu .box img:hover{
+    transform: translate(0, -150px);
+    transition: 0.7s;
+  }
   .projects .project-menu .box p{
     width: 450px;
   }
@@ -259,26 +324,59 @@
     font-size: 12px;
     text-align: center;
     padding: 2px 0;
-    margin-bottom: 70px;
+    margin-top: 45px;
     border: 1px solid #fff;
     border-radius: 50px;
     width: 41px;
     height: 23px;
   }
   .technology .stack h2{
-    margin-left: 10px;
+    margin-left: 12px;
   }
-  .technology .stack p{
-    margin-left: 50px;
-    right: 200px;
-    /* left: 500px; */
-    display: none;
+  .technology .stack{
+    /* margin-left: 50px; */
+    /* display: none; */
+    position: relative;
   }
-  .technology .stack:hover {
-    /* display: block; */
-    transform: translate(-50px);
-    transition: 0.5s;
+  .technology .stack .text{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
   }
+  .technology .stack .text:hover{
+    transform: translateX(-20%);
+    transition: 0.7s;
+  }
+  .technology .stack p  {
+    position: absolute;
+    font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
+    bottom: 40%;
+    right: -30vw;
+    display: block;
+    opacity: 0;
+    transition: 0.7s ease-out 0s;
+  }
+  .technology .stack .text:hover p{
+    opacity: 1;
+    transform: translateX(-30%);
+    transition: 0.7s;
+  }
+  .technology .stack .text .css3-text{
+    right: -15vw;
+  }
+  .technology .stack .text .Java{
+    right: -15vw;
+  }
+  .technology .stack .text .jQu{
+    right: -40vw;
+  }
+  .technology .stack .text .Git{
+    right: -18vw;
+  }
+  .technology .stack .text .Tool{
+    right: -50vw;
+  }
+ 
  
   /****** Slogan ******/
   *{margin: 0; padding: 0; box-sizing: border-box;}
@@ -338,6 +436,28 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: relative;
+  }
+  footer .about .about-page .ar-emoji{
+    border: 1px solid #fff;
+    width: 20vw;
+    height: 10vw;
+  }
+  footer .about .about-page .keyword{
+    border: 1px solid #fff;
+    background-color: #222;
+    padding: 10px;
+    font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
+    position: absolute;
+    top: 25vw;
+    left: 18vw;
+  }
+  footer .about .about-page .keyword .key{
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .about .about-page .keyword .key li{
+    margin: 0 10px;
   }
   footer .about .about-page .ab-me h3{
     margin: 50px 0;
