@@ -67,13 +67,42 @@ window.onscroll = function () {
 
 
     // 롤링
-    setInterval(function(){
-        $('#slide2>ul').delay(3000);
-        $('#slide2>ul').animate({marginTop: "-200px"})
-        $('#slide2>ul').delay(3000);
-        $('#slide2>ul').animate({marginTop: "-400px"})
-        $('#slide2>ul').delay(3000);
-        $('#slide2>ul').animate({marginTop: "0px"})
-    });
+    // setInterval(function(){
+    //     $('#slide2>ul').delay(3000);
+    //     $('#slide2>ul').animate({marginTop: "-200px"})
+    //     $('#slide2>ul').delay(3000);
+    //     $('#slide2>ul').animate({marginTop: "-400px"})
+    //     $('#slide2>ul').delay(3000);
+    //     $('#slide2>ul').animate({marginTop: "0px"})
+    // });
+    $(document).ready(function(){
+                       
+        jQuery(function ($) {
+             var ticker = function () {
+                 timer = setTimeout(function () {
+                     $('.rollingV .rolling_box .aniText:first').animate({
+                         marginTop: '-60px'
+                     }, 600, function () {
+                         $(this).detach().appendTo('.rollingV .rolling_box').removeAttr('style');
+                     });
+                     ticker();
+                 }, 3000);
+             };
+
+
+             //4 마우스를 올렸을 때 기능 정지
+             var tickerover = function () {
+                 $('.rollingV .rolling_box').mouseover(function () {
+                     clearTimeout(timer);
+                 });
+                 $('.rollingV .rolling_box').mouseout(function () {
+                     ticker();
+                 });
+             };
+             tickerover();
+             // 4 끝
+             ticker();
+         });
+     });
 
 
