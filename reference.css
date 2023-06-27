@@ -30,7 +30,7 @@
   header .main-menu .sub-menu .circle{
     animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
   }
- 
+ /**** 아래 롤링 연습 작업 *****/
   /* * {margin:0; padding:0;} */
   /* header .main-menu {
     overflow: hidden;
@@ -52,6 +52,7 @@
   header .main-menu .main-text .roll li{
     height: 60px; width: 100%; line-height: 60px;
   } */
+
   header .main-menu > ul{
     position: relative;
     width: auto;
@@ -91,7 +92,9 @@
   header .main-menu .main-text .roll{
     display: flex;
     justify-content: left;
+    overflow: hidden;
   }
+  /****** 위 롤링연습작업 *****/
   header .main-menu .main-text h2{
     padding-top: 50px;
     padding-left: 4vw;
