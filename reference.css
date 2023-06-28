@@ -319,11 +319,13 @@
   .technology .stack h2{
     margin-left: 12px;
   }
+  .technology .line{
+    border-bottom: 1px solid #fff;
+  }
   .technology .stack{
     /* margin-left: 50px; */
     /* display: none; */
     position: relative;
-    border-bottom: 1px solid #fff;
 
   }
   .technology .stack .text{
