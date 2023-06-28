@@ -17,6 +17,8 @@ window.onscroll = function () {
     purple.style.transform = "rotate(" + window.pageYOffset/15 + "deg)";
     
     }
+    // 메뉴 ex
+    
     // .projects .project-menu 프로젝트 부분
     $(document).ready(function() {
         $(window).scroll( function(){
