@@ -187,23 +187,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 80px;
+    margin: 0 10px;
     margin-bottom: 200px;
     position: relative;
-    opacity:0; 
+    /* opacity:0;  */
   }
   
   .projects .project-menu .box img{
-    max-width: 33.2%;
-    border-radius: 50px;
+    /* max-width: 33.2%; */
+    width: 27.751vw;
+    height: 18.442vw;
+    /* border-radius: 50px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-  .projects .project-menu .box img:hover{
-    transform: translate(0, -150px);
-    transition: 0.7s;
   }
   .projects .project-menu .box p{
     width: 450px;
+    font-size: 25px;
   }
   .projects .project-menu .row-reverse{
     flex-direction: row-reverse;
@@ -217,7 +216,7 @@
   .projects .project-menu .row-reverse span{
     transform: scaleX(-1);
   }
-  .projects .project-menu .box .project-img1{
+  /* .projects .project-menu .box .project-img1{
     background: url(./reference-image/porject1.png) no-repeat 50% / cover;
     width: 27.751vw;
     height: 18.442vw;
@@ -264,6 +263,7 @@
     top: 4vw;
     left: 0;
   }
+  */
 
   /****** technology stack ******/
   .technology {
@@ -334,7 +334,7 @@
     /* align-items: center; */
   }
   .technology .stack:hover{
-    transform: translateX(-10%);
+    transform: translateX(-20%);
     transition: 1s;
   }
   .technology .stack p  {
@@ -345,20 +345,18 @@
     display: block;
     opacity: 0;
     transition: 1s ease-out 0s;
+    line-height: 1.5;
   }
   .technology .stack:hover p{
     opacity: 1;
-    transform: translateX(-30%);
-    transition: 1s;
+    transform: translateX(-20%);
+    transition: 0.7s;
   }
-  .technology .stack .text .css3-text{
+  .technology .stack .text .html5{
     right: -1vw;
   }
   .technology .stack .text .Java{
     right: -1vw;
-  }
-  .technology .stack .text .jQu{
-    right: -4vw;
   }
   .technology .stack .text .Git{
     right: -1vw;
