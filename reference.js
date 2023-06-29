@@ -47,9 +47,9 @@ window.onscroll = function () {
         $('#openbtn').hide();
       });
       $('#closebtn').on('click', () => {
-        $('.menubox').animate({top: -1000}, 300);
+        $('.menubox').animate({top: 1500}, 300);
         $('#openbtn').show();
-      })
+      });
 
     // .projects .project-menu 프로젝트 부분
     $(document).ready(function() {
@@ -101,6 +101,21 @@ window.onscroll = function () {
 
 
     // 롤링
+    // function movingLetter(n) {
+    //     const txt = $('.aniText');
+    //     const currentTxt = txt.eq(n);
+    //     const nextIdx = (n + 1) % txt.length;
+  
+    //     txt.removeClass('active');
+    //     currentTxt.addClass('active');
+  
+    //     setTimeout(function () {
+    //       movingLetter(nextIdx);// 재귀함수
+    //     }, 2000);
+    //   }
+  
+    //   let num = 0;
+    //   movingLetter(num);
     // setInterval(function(){
     //     $('#slide2>ul').delay(3000);
     //     $('#slide2>ul').animate({marginTop: "-200px"})
@@ -109,14 +124,14 @@ window.onscroll = function () {
     //     $('#slide2>ul').delay(3000);
     //     $('#slide2>ul').animate({marginTop: "0px"})
     // });
-    $(document).ready(function(){
+    // $(document).ready(function(){
                        
         jQuery(function ($) {
              var ticker = function () {
                  timer = setTimeout(function () {
                      $('.rollingV .rolling_box .aniText:first').animate({
-                         marginTop: '-60px'
-                     }, 600, function () {
+                         marginTop: '130px'
+                     }, 800, function () {
                          $(this).detach().appendTo('.rollingV .rolling_box').removeAttr('style');
                      });
                      ticker();
@@ -137,6 +152,5 @@ window.onscroll = function () {
              // 4 끝
              ticker();
          });
-     });
 
 

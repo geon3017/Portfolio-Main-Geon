@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 @media (width >= 1300px){
+
   body{
     overflow-x: hidden; overflow-y: auto;
     background-color: #191919;
     color: #fff;
+    font-family: var(--main-font-);
   }
   header{
     position: relative;
@@ -42,6 +44,11 @@
   
   header .main-menu .sub-menu .circle{
     animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
+  }
+  @keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+      }
   }
   /***** 메뉴 아래 ex *****/
   header .main-menu .menubox {
@@ -122,12 +129,27 @@
   .rollingV .rolling_box .aniText {
     height: 200px; 
     width: 100%; 
+    /* transition: 0.5s; */
+      /* 진행시간 대기시간 */
+    transform: translateY(-30px);
     /* line-height: 60px; */
   }
+
+    .rollingV .aniText.active h2 {
+      transform: translateY(0);
+      opacity: 1;
+    }
   /****** 위 롤링연습작업 *****/
+  header .main-txt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 171px;
+    padding: 0 5vw;
+  }
   header .main-menu .main-text h2{
-    padding-top: 50px;
-    padding-left: 4vw;
+    padding-top: 55px;
+    padding-left: 1vw;
     font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
     line-height: 1.3;
   }
@@ -136,13 +158,6 @@
     padding-left: 46vw;
     font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
     line-height: 1.3;
-  }
-  header .main-txt{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 171px;
-    padding: 0 5vw;
   }
   header .main-txt img{
     margin-right: 26px;
@@ -169,11 +184,7 @@
     margin: 0 20px;
     animation: rotate_image 8s linear infinite;transform-origin: 50% 50%;
   }
-  @keyframes rotate_image{
-    100% {
-        transform: rotate(360deg);
-      }
-  }
+  
   header .main-menu .main-txt .semoji img{
     margin: 0 20px;
   }
@@ -390,29 +401,35 @@
   .technology .stack p  {
     position: absolute;
     font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
-    bottom: 40%;
-    right: 1vw;
+    bottom: 30%;
+    right: -1vw;
     display: block;
     opacity: 0;
     transition: 1s ease-out 0s;
-    line-height: 1.5;
+    line-height: 2;
   }
   .technology .stack:hover p{
     opacity: 1;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
     transition: 0.7s;
   }
   .technology .stack .text .html5{
     right: -1vw;
   }
   .technology .stack .text .Java{
-    right: -1vw;
+    right: -3vw;
+    bottom: 20%;
   }
   .technology .stack .text .Git{
-    right: -1vw;
+    right: -10vw;
+    bottom: 25%;
+  }
+  .technology .stack .text .Design{
+    right: -2vw;
+    bottom: 40%;
   }
   .technology .stack .text .Tool{
-    right: -5vw;
+    right: 10vw;
   }
  
  
@@ -439,7 +456,7 @@
     text-transform: capitalize;
   }
   .slideItem{
-    font-size: clamp(9.0625rem, 1.8548rem + 8.871vw, 12.5rem);
+    font-size: clamp(8.75rem, 2.1976rem + 8.0645vw, 11.875rem);
     font-weight: 300;
     color: #fff;
     padding: 0 10px;
@@ -488,7 +505,7 @@
     font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
     position: absolute;
     top: 25vw;
-    left: 19vw;
+    left: 20.5%;
   }
   footer .about .about-page .keyword .key{
     display: flex;
