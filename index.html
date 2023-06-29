@@ -24,12 +24,29 @@
     <!------- menu ------->
     <header>
       <div class="main-menu">
+        <div class="menubox">
+          <div class="boxline">
+            <div class="icon">
+              <ul class="menubox2">
+                <li>icon</li>
+                <li id="closebtn">close</li>
+              </ul>
+            </div>
+          </div>
+          <div class="boxline">
+            <div><a href="#">home</a></div>
+          </div>
+          <div class="boxline">
+            <div><a href="#">project</a></div>
+          </div>
+          <div class="boxline">
+            <div><a href="#">about</a></div>
+          </div>
+        </div>
         <ul class="sub-menu">
-          <li><p>geon</p></li>
+          <li><a href="#propart"><p>geon</a></p></li>
           <li class="circle"></li>
-          <li><a href="#">menu</a>
-            
-          </li>
+          <li id="openbtn"><a href="#">menu</a></li>
         </ul>
         <div class="main-text">
           <!-- <h2>안녕하세요</h2> -->
@@ -56,16 +73,7 @@
                     "노력형"
                   </div>
                   <div class="aniText">
-                    ""1
-                  </div>
-                  <div class="aniText">
-                    ""2
-                  </div>
-                  <div class="aniText">
-                    ""3
-                  </div>
-                  <div class="aniText">
-                    ""4
+                    "???"
                   </div>
                  </div>
               </li>
@@ -96,7 +104,7 @@
     <section class="projects">
       <div class="pul">보라색</div>
       <div class="expl">
-        <h2>project</h2>
+        <h2 id="propart">project</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, amet ex nemo praesentium at facere incidunt consequatur totam ab qui voluptate delectus nihil corrupti unde, obcaecati error iste enim hic!</p>
       </div>
       <div class="project-menu">
@@ -141,7 +149,7 @@
           <div class="text">
             <h4>01/</h4>
             <h2 class="html5">HTML5&CSS3</h2>
-            <p>웹 접근성을 고려한 시맨틱 태그 <br>반응형 웹</p>
+            <p>웹 접근성위한 마크업</p>
           </div>
         </div>
       </div>
@@ -149,8 +157,8 @@
         <div class="stack">
           <div class="text">
             <h4>02/</h4>
-            <h2>Js&jQuery</h2>
-            <p class="Java">비동기 통신 Ajax를 이용한 JSON 데이터 활용 ES6+ 문법</p>
+            <h2>js&jQuery</h2>
+            <p class="Java">DOM제어, EVENT제어<!--비동기 통신 Ajax를 이용한 JSON 데이터 활용 ES6문법--></p>
           </div>
         </div>
       </div>
@@ -159,7 +167,7 @@
           <div class="text">
             <h4>03/</h4>
             <h2>Github&Git</h2>
-            <p class="Git">비동기 통신 Ajax를 이용한 JSON 데이터 활용</p>
+            <p class="Git">프로젝트 관리</p>
           </div>
         </div>
       </div>
@@ -167,15 +175,6 @@
         <div class="stack">
           <div class="text">
             <h4>04/</h4>
-            <h2>Github&Git</h2>
-            <p class="tool">프로젝트 관리</p>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>05/</h4>
             <h2>Design</h2>
             <p class="Git">Figma(프로토타입 제작) - photoshop - illustrator</p>
           </div>
@@ -184,9 +183,9 @@
       <div class="line">
         <div class="stack">
           <div class="text">
-            <h4>06/</h4>
+            <h4>05/</h4>
             <h2>Tool</h2>
-            <p class="Tool">VScode</p>
+            <p class="Git">VScode</p>
           </div>
         </div>
       </div>
@@ -222,7 +221,7 @@
               <li>#왕초보</li>
               <li>#시간준수</li>
               <li>#찡긋</li>
-              <li>#고뇌 중</li>
+              <li>#노력</li>
             </ul>
           </div>
           <div class="ab-me">
@@ -249,7 +248,7 @@
       <div class="top-goinh">
         <ul>
           <li>Choi Geon</li>
-          <li><a href="#">back to top</a></li>
+          <li><a href="#top">back to top</a></li>
           <li>2023</li>
         </ul>
       </div>

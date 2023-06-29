@@ -17,8 +17,40 @@ window.onscroll = function () {
     purple.style.transform = "rotate(" + window.pageYOffset/15 + "deg)";
     
     }
-    // 메뉴 ex
-    
+    // header - sub-menu
+    let prevScroll = window.scrollY;
+      console.log(prevScroll);
+
+      $(window).on('scroll', () => {
+        // 스크롤시 변수에 저장
+        let currentScroll = window.scrollY;
+        console.log('currentScroll', currentScroll);
+        console.log('1prevScroll', prevScroll);
+
+        // 이전 스크롤 값이 크면 true, 스크롤을 올리면 header 보임
+        if(prevScroll > currentScroll){
+          // $('header').show();
+          $('.sub-menu').css({top: 0});
+        }else{ // 이후 스크롤 값이 크면 false, 스크롤을 내리면 header 숨김
+          // $('header').hide();
+          $('.sub-menu').css({top: - 150});
+        }
+
+        // prev에 현재 스크롤 값 대입 
+        prevScroll = currentScroll;
+        console.log('2prevScroll', prevScroll);
+      });
+
+      // menu 버튼 
+      $('#openbtn').on('click', () => {
+        $('.menubox').css({opacity: 1}).animate({top: 0}, 300);
+        $('#openbtn').hide();
+      });
+      $('#closebtn').on('click', () => {
+        $('.menubox').animate({top: -1000}, 300);
+        $('#openbtn').show();
+      })
+
     // .projects .project-menu 프로젝트 부분
     $(document).ready(function() {
         $(window).scroll( function(){
