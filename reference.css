@@ -113,8 +113,8 @@
 
   .rollingV {
     overflow: hidden;
-  margin-top: 120px;
-}
+    margin-top: 120px;
+  }
   .rollingV .holl ul{
     display: flex;
   }
@@ -187,6 +187,7 @@
   
   header .main-menu .main-txt .semoji img{
     margin: 0 20px;
+    /* z-index: -99999; */
   }
   header .arrwo{
     text-align: center;
@@ -203,6 +204,7 @@
     position: absolute;
     top: 65vw;
     left: 60vw;
+    /* z-index: -999; */
   }
   /***** projects *****/
   .projects .expl{
@@ -229,7 +231,7 @@
     width: 100%;
     height: 100vh;
     text-indent: -9999px;
-    z-index: -9999;
+    /* z-index: -9999; */
     position: absolute;
     top: 100vw;
     right: 45vw;
@@ -250,6 +252,7 @@
     margin-bottom: 200px;
     position: relative;
     /* opacity:0;  */
+    /* z-index: -99; */
   }
   
   .projects .project-menu .box img{
@@ -335,7 +338,7 @@
     width: 100%;
     height: 100vh;
     text-indent: -9999px;
-    z-index: -9999;
+    /* z-index: -9999; */
     position: absolute;
     top: -35vw;
     right: 50vw;
@@ -344,7 +347,7 @@
   .technology .violet-grad{
     margin: 0;
     padding: 0;
-    z-index: -9999;
+    /* z-index: -9999; */
   }
   .technology h3{
     font-size: clamp(3.125rem, 2.4698rem + 0.8065vw, 3.4375rem);
@@ -364,7 +367,7 @@
     justify-content: center;
     align-items: center;
     /* border-bottom: 1px solid #fff; */
-    z-index: 99;
+    /* z-index: 99; */
 
   }
   .technology .stack h4{
