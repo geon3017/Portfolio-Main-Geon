@@ -261,14 +261,17 @@ header .main-menu .purple-star {
 
 .projects .project-menu .box img {
   /* max-width: 33.2%; */
-  width: 27.751vw;
-  height: 18.442vw;
+  width: 30.751vw;
+  height: 23.442vw;
   /* border-radius: 50px; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+.projects .project-menu .project-01 img{
+  height: 20vw;
+}
 .projects .project-menu .box p {
-  width: 450px;
+  width: 20vw;
   font-size: 25px;
 }
 .projects .project-menu .row-reverse {
