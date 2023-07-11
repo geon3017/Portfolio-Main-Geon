@@ -1,250 +1,258 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>portfolio-geon</title>
-    <!-- open graph -->
-    <meta property="og:title" content="portfolio-geon" />
-    <meta property="og:type" content="portfolio-web" />
-    <meta property="og:url" content="https://github.com/geon3017/portfolio-main-geon" />
-    <meta property="og:image" content="https://github.com/geon3017/portfolio-main-geon/reference-image/smile.png" />
 
-    <!-- minireset -->
-    <link rel="stylesheet" href="./common/minireset.min.css">
-    <!-- font -->
-    <link rel="stylesheet" href="./common/fons.css">
-    <link rel="stylesheet" href="./common/variable.css">
-    <!-- css -->
-    <link rel="stylesheet" href="./reference.css">
-    <!-- js -->
-    <script defer src="./reference.js"></script>
-    <!-- jQuery -->
-    <script src="./common/jquery-3.7.0.min.js"></script>
-  </head>
-  <body>
-    <!------- menu ------->
-    <header>
-      <div class="main-menu">
-        <div class="menubox">
-          <div class="boxline">
-            <div class="icon">
-              <ul class="menubox2">
-                <li>icon</li>
-                <li id="closebtn">close</li>
-              </ul>
-            </div>
-          </div>
-          <div class="boxline">
-            <div><a href="#">home</a></div>
-          </div>
-          <div class="boxline">
-            <div><a href="#">project</a></div>
-          </div>
-          <div class="boxline">
-            <div><a href="#">about</a></div>
-          </div>
-        </div>
-        <ul class="sub-menu">
-          <li><a href="#propart"><p>geon</p></a></li>
-          <li class="circle" id="top"></li>
-          <li id="openbtn"><a href="#">menu</a></li>
-        </ul>
-        <div class="main-text">
-          <div class="rollingV ani">
-            <div class="holl">
-              <ul>
-                <li><h2>안녕하세요</h2></li>
-                <li>
-                  <div class="rolling_box">
-                    <div class="aniText active">
-                      <h2>"카멜레온"</h2>
-                    </div>
-                    <div class="aniText">
-                      <h2>"???"</h2>
-                    </div>
-                    <div class="aniText">
-                      <h2>"노력형"</h2>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </div>
-          <h3>최건입니다</h3>
-        </div>
-        <div class="main-txt">
-            <div class="semoji">
-              <img id="reload" src="./emoji/smile.svg" alt="웃는 얼굴">
-              <img id="rel" src="./emoji/rombo.svg" alt="정사각형에서 4변이 움푹들어가있는 모형">
-            </div>
-            <div class="sub-txt">
-              <p>처음 접하는 웹 퍼블리싱 그래서 많이 어려웠지만
-                도전하는 입장으로 포기하지 않고 계속 나아겠습니다.
-                앞으로도 쭉 가겠습니다.</p>
-              <div class="rotate"><img src="./emoji/scroll.svg" alt="scroll원형"></div>
-            </div>
-          </div>
-          <div class="arrwo">
-            <span><a href="#"><img src="./emoji/arrow-down.svg" alt="화살표 아래로 향해있음"></a></span>
-          </div>
-          <div id="pu-star" class="purple-star">보라색별</div>
-      </div>    
-    </header>
-    <!------- projects ------->
-    <section class="projects">
-      <div class="pul" id="propart">보라색</div>
-      <div class="expl">
-        <h2>project</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, amet ex nemo praesentium at facere incidunt consequatur totam ab qui voluptate delectus nihil corrupti unde, obcaecati error iste enim hic!</p>
-      </div>
-      <div class="project-menu">
-        <div class="project-01 box">
-          <span>화살표</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-          <img src="./reference-image/porject1.png" alt="임시사진">
-          <!-- <div class="project-img1 box-img">이미지</div> -->
-        </div>
-        <div class="project-02 box row-reverse">
-          <span>화살표</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-          <img src="./reference-image/porject2.png" alt="임시사진">
-          <!-- <div class="project-img2 box-img row">이미지</div> -->
-        </div>
-        <div class="project-03 box">
-          <span>화살표</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-          <img src="./reference-image/porject3.png" alt="임시사진">
-          <!-- <div class="project-img3 box-img">이미지</div> -->
-        </div>
-        <div class="project-04 box row-reverse">
-          <span>화살표</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-          <img src="./reference-image/porject4.png" alt="임시사진">
-          <!-- <div class="project-img4 box-img row">이미지</div> -->
-        </div>
-        <div class="project-05 box">
-          <span>화살표</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-          <img src="./reference-image/porject5.png" alt="임시사진">
-          <!-- <div class="project-img5 box-img">이미지</div> -->
-        </div>
-      </div>
-    </section>
-    <!------- technology stack ------->
-    <section class="technology">
-      <div class="violet-grad">보라색</div>
-      <h3>technology stack</h3>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>01/</h4>
-            <h2 class="html5">HTML5&CSS3</h2>
-              <p>웹 접근성을 고려한 시맨틱 태그<br>
-                미디어쿼리를 적용한 반응형 웹</p>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>02/</h4>
-            <h2>js&jQuery</h2>
-            <p class="Java">ES6+ 문법 자바스크립트 활용<br>
-              비동기 통신 AJAX를 이용한 JSON 데이터 활용<!--비동기 통신 Ajax를 이용한 JSON 데이터 활용 ES6문법--></p>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>03/</h4>
-            <h2>Github&Git</h2>
-            <p class="Git">GIT으로 코드 버전 관리 GITHUB로 협업 가능<br>
-              GITHUB를 이용한 배포와 CLI 기반 GITBASH 사용 가능</p>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>04/</h4>
-            <h2>Design</h2>
-            <p class="Design">Figma(프로토타입 제작) - photoshop - illustrator</p>
-          </div>
-        </div>
-      </div>
-      <div class="line">
-        <div class="stack">
-          <div class="text">
-            <h4>05/</h4>
-            <h2>Tool</h2>
-            <p class="Tool">VScode</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------- Slogan ------->
-    <section class="Slogan">
-      <div class="viewBox">
-        <div class="slideBox">
-          <div class="leftbox">
-             <div class="slideItem">just do it</div>
-             <div class="slideItem">i can do it</div>
-          </div>
-          <div class="rightbox">
-             <div class="slideItem">just do it</div>
-             <div class="slideItem">i can do it</div>
-          </div>
-        </div>
-      </div>
-      <div class="grn">
-        <img class="circle-green" src="./emoji/green-star.svg" alt="초록색 별">
-      </div>
-    </section>
-    <!------- about me ------->
-    <footer>
-      <div class="about">
-        <h2>about me</h2>
-        <div class="about-page">
-          <div class="ar-emoji">
-            <p>이미지</p>
-          </div>
-          <div class="keyword">
-            <ul class="key">
-              <li>#왕초보</li>
-              <li>#시간준수</li>
-              <li>#찡긋</li>
-              <li>#노력</li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>portfolio-geon</title>
+  <!-- open graph -->
+  <meta property="og:title" content="portfolio-geon" />
+  <meta property="og:type" content="portfolio-web" />
+  <meta property="og:url" content="https://github.com/geon3017/portfolio-main-geon" />
+  <meta property="og:image" content="https://github.com/geon3017/portfolio-main-geon/reference-image/smile.png" />
+
+  <!-- minireset -->
+  <link rel="stylesheet" href="./common/minireset.min.css">
+  <!-- font -->
+  <link rel="stylesheet" href="./common/fons.css">
+  <link rel="stylesheet" href="./common/variable.css">
+  <!-- css -->
+  <link rel="stylesheet" href="./reference.css">
+  <!-- js -->
+  <script defer src="./reference.js"></script>
+  <!-- jQuery -->
+  <script src="./common/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+  <!------- menu ------->
+  <header>
+    <div class="main-menu">
+      <div class="menubox">
+        <div class="boxline">
+          <div class="icon">
+            <ul class="menubox2">
+              <li>icon</li>
+              <li id="closebtn">close</li>
             </ul>
           </div>
-          <div class="ab-me">
-            <h3>지역: 경기도 평택</h3>
-            <h3>경력</h3>
-            <h3>기타</h3>
+        </div>
+        <div class="boxline">
+          <div><a href="#">home</a></div>
+        </div>
+        <div class="boxline">
+          <div><a href="#">project</a></div>
+        </div>
+        <div class="boxline">
+          <div><a href="#">about</a></div>
+        </div>
+      </div>
+      <ul class="sub-menu">
+        <li><a href="#propart">
+            <p>geon</p>
+          </a></li>
+        <li class="circle" id="top"></li>
+        <li id="openbtn"><a href="#">menu</a></li>
+      </ul>
+      <div class="main-text">
+        <div class="rollingV ani">
+          <div class="holl">
+            <ul>
+              <li>
+                <h2>안녕하세요</h2>
+              </li>
+              <li>
+                <div class="rolling_box">
+                  <div class="aniText active">
+                    <h2>"카멜레온"</h2>
+                  </div>
+                  <div class="aniText">
+                    <h2>"???"</h2>
+                  </div>
+                  <div class="aniText">
+                    <h2>"노력형"</h2>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
+        <h3>최건입니다</h3>
       </div>
-      <div class="email">
-        <div class="email-txt">
-          <h3>git hub address</h3>
-          <p>https://github.com/geon3017/portfolio-main-geon</p>
+      <div class="main-txt">
+        <div class="semoji">
+          <img id="reload" src="./emoji/smile.svg" alt="웃는 얼굴">
+          <img id="rel" src="./emoji/rombo.svg" alt="정사각형에서 4변이 움푹들어가있는 모형">
+        </div>
+        <div class="sub-txt">
+          <p>처음 접하는 웹 퍼블리싱 그래서 많이 어려웠지만
+            도전하는 입장으로 포기하지 않고 계속 나아겠습니다.
+            앞으로도 쭉 가겠습니다.</p>
+          <div class="rotate"><img src="./emoji/scroll.svg" alt="scroll원형"></div>
         </div>
       </div>
-      <div class="email">
-        <div class="email-txt">
-          <h3>email address</h3>
-          <p>geon3017@naver.com</p>
+      <div class="arrwo">
+        <span><a href="#"><img src="./emoji/arrow-down.svg" alt="화살표 아래로 향해있음"></a></span>
+      </div>
+      <div id="pu-star" class="purple-star">보라색별</div>
+    </div>
+  </header>
+  <!------- projects ------->
+  <section class="projects">
+    <div class="pul" id="propart">보라색</div>
+    <div class="expl">
+      <h2>project</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, amet ex nemo praesentium at facere incidunt
+        consequatur totam ab qui voluptate delectus nihil corrupti unde, obcaecati error iste enim hic!</p>
+    </div>
+    <div class="project-menu">
+      <div class="project-01 box">
+        <span>화살표</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <img src="./reference-image/porject1.png" alt="임시사진">
+        <!-- <div class="project-img1 box-img">이미지</div> -->
+      </div>
+      <div class="project-02 box row-reverse">
+        <span>화살표</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <img src="./reference-image/porject2.png" alt="임시사진">
+        <!-- <div class="project-img2 box-img row">이미지</div> -->
+      </div>
+      <div class="project-03 box">
+        <span>화살표</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <img src="./reference-image/porject3.png" alt="임시사진">
+        <!-- <div class="project-img3 box-img">이미지</div> -->
+      </div>
+      <div class="project-04 box row-reverse">
+        <span>화살표</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <img src="./reference-image/porject4.png" alt="임시사진">
+        <!-- <div class="project-img4 box-img row">이미지</div> -->
+      </div>
+      <div class="project-05 box">
+        <span>화살표</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <img src="./reference-image/porject5.png" alt="임시사진">
+        <!-- <div class="project-img5 box-img">이미지</div> -->
+      </div>
+    </div>
+  </section>
+  <!------- technology stack ------->
+  <section class="technology">
+    <div class="violet-grad">보라색</div>
+    <h3>technology stack</h3>
+    <div class="line">
+      <div class="stack">
+        <div class="text">
+          <h4>01/</h4>
+          <h2 class="html5">HTML5&CSS3</h2>
+          <p>웹 접근성을 고려한 시맨틱 태그<br>
+            미디어쿼리를 적용한 반응형 웹</p>
         </div>
       </div>
-      <div class="top-goinh">
-        <ul>
-          <li>Choi Geon</li>
-          <li><a href="#">back to top</a></li>
-          <li>2023</li>
-        </ul>
+    </div>
+    <div class="line">
+      <div class="stack">
+        <div class="text">
+          <h4>02/</h4>
+          <h2>js&jQuery</h2>
+          <p class="Java">ES6+ 문법 자바스크립트 활용<br>
+            비동기 통신 AJAX를 이용한 JSON 데이터 활용<!--비동기 통신 Ajax를 이용한 JSON 데이터 활용 ES6문법--></p>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="line">
+      <div class="stack">
+        <div class="text">
+          <h4>03/</h4>
+          <h2>Github&Git</h2>
+          <p class="Git">GIT으로 코드 버전 관리 GITHUB로 협업 가능<br>
+            GITHUB를 이용한 배포와 CLI 기반 GITBASH 사용 가능</p>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="stack">
+        <div class="text">
+          <h4>04/</h4>
+          <h2>Design</h2>
+          <p class="Design">Figma(프로토타입 제작) - photoshop - illustrator</p>
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="stack">
+        <div class="text">
+          <h4>05/</h4>
+          <h2>Tool</h2>
+          <p class="Tool">VScode</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------- Slogan ------->
+  <section class="Slogan">
+    <div class="viewBox">
+      <div class="slideBox">
+        <div class="leftbox">
+          <div class="slideItem">just do it</div>
+          <div class="slideItem">i can do it</div>
+        </div>
+        <div class="rightbox">
+          <div class="slideItem">just do it</div>
+          <div class="slideItem">i can do it</div>
+        </div>
+      </div>
+    </div>
+    <div class="grn">
+      <img class="circle-green" src="./emoji/green-star.svg" alt="초록색 별">
+    </div>
+  </section>
+  <!------- about me ------->
+  <footer>
+    <div class="about">
+      <h2>about me</h2>
+      <div class="about-page">
+        <div class="ar-emoji">
+          <p>이미지</p>
+        </div>
+        <div class="keyword">
+          <ul class="key">
+            <li>#왕초보</li>
+            <li>#시간준수</li>
+            <li>#찡긋</li>
+            <li>#노력</li>
+          </ul>
+        </div>
+        <div class="ab-me">
+          <h3>지역: 경기도 평택</h3>
+          <h3>경력</h3>
+          <h3>기타</h3>
+        </div>
+      </div>
+    </div>
+    <div class="email">
+      <div class="email-txt">
+        <h3>git hub address</h3>
+        <p>https://github.com/geon3017/portfolio-main-geon</p>
+      </div>
+    </div>
+    <div class="email">
+      <div class="email-txt">
+        <h3>email address</h3>
+        <p>geon3017@naver.com</p>
+      </div>
+    </div>
+    <div class="top-goinh">
+      <ul>
+        <li>Choi Geon</li>
+        <li><a href="#">back to top</a></li>
+        <li>2023</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
