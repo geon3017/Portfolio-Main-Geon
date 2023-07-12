@@ -1,16 +1,19 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #191919;
   color: #fff;
-  font-family: var(--main-font-);
+  font-family: var(--main-font);
 }
 header {
   position: relative;
 }
-header .main-menu .sub-menu {
+header .main-menu .sub-menu .header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -19,17 +22,16 @@ header .main-menu .sub-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 50px; */
   padding: 0 168px;
   transition: 0.4s;
   background-color: #191919;
-  z-index: 9;
+  z-index: 1;
 }
 header .main-menu .sub-menu li p {
   font-size: clamp(2.5rem, -0.121rem + 3.2258vw, 3.75rem);
   text-transform: capitalize;
 }
-header .main-menu .sub-menu .circle {
+.circle {
   background: url(./emoji/little-star-white.svg) no-repeat 50% / contain;
   width: 70px;
   height: 70px;
@@ -50,61 +52,9 @@ header .main-menu .sub-menu .circle {
     transform: rotate(360deg);
   }
 }
-/***** 메뉴 아래 ex *****/
-
-header .main-menu .menubox {
-  opacity: 0;
-  /* display: none; */
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  color: #222;
-  /* z-index: -1; */
-  opacity: 0;
-  /* cursor: pointer; */
-}
-header .main-menu .menubox div {
-  text-transform: capitalize;
-  font-size: 25px;
-  margin: 50px;
-}
-header .main-menu .menubox div {
-  /* background-color: #222; */
-  color: #222;
-}
-header .main-menu .menubox .boxline {
-  border-bottom: 1px solid #222;
-}
-header .main-menu .menubox .boxline ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: clamp(2.5rem, -0.121rem + 3.2258vw, 3.75rem);
-  padding: 0 50px;
-}
-header .main-menu .menubox .boxline .icon .menubox2 li:last-child {
-  cursor: pointer;
-}
-/***** 메뉴 위 ex *****/
+/***** 메뉴 아래 public.css*****/
 
 /**** 아래 롤링 연습 작업 *****/
-/* #index_02 {
-  display: flex;
-  font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
- }
-  #slide2{
-    margin-top: 2vw;
-    height: 200px;
-    overflow: hidden;
-    margin-left: 5vw;
-  }
-  #slide2>ul{
-    height: 700px;
-  }
-  #slide2>ul>li{
-    height: 200px;
-  } */
 * {
   margin: 0;
   padding: 0;
@@ -122,6 +72,7 @@ header .main-menu .menubox .boxline .icon .menubox2 li:last-child {
 }
 .rollingV .holl ul {
   display: flex;
+  margin-left: 2.5vw;
 }
 .rollingV .rolling_box {
   margin-top: 2vw;
@@ -134,10 +85,7 @@ header .main-menu .menubox .boxline .icon .menubox2 li:last-child {
 .rollingV .rolling_box .aniText {
   height: 200px;
   width: 100%;
-  /* transition: 0.5s; */
-  /* 진행시간 대기시간 */
   transform: translateY(-30px);
-  /* line-height: 60px; */
 }
 
 .rollingV .aniText.active h2 {
@@ -145,6 +93,7 @@ header .main-menu .menubox .boxline .icon .menubox2 li:last-child {
   opacity: 1;
 }
 /****** 위 롤링연습작업 *****/
+
 header .main-txt {
   display: flex;
   justify-content: space-between;
@@ -181,10 +130,8 @@ header .main-txt .sub-txt p {
 }
 
 header .main-txt .sub-txt .rotate img {
-  /* background: url(./emoji/scroll.svg) no-repeat 50% /contain; */
   width: 7vw;
   height: 100px;
-  /* text-indent: -9999px; */
   margin: 0 20px;
   animation: rotate_image 8s linear infinite;
   transform-origin: 50% 50%;
@@ -192,7 +139,6 @@ header .main-txt .sub-txt .rotate img {
 
 header .main-menu .main-txt .semoji img {
   margin: 0 20px;
-  /* z-index: -99999; */
 }
 header .arrwo {
   text-align: center;
@@ -209,33 +155,21 @@ header .main-menu .purple-star {
   position: absolute;
   top: 65vw;
   left: 60vw;
-  /* z-index: -999; */
 }
 /***** projects *****/
 .projects .expl {
   margin: 850px -200px 450px;
   position: relative;
-  /* animation: fadeInUp 1s; */
   opacity: 0;
-  /* margin-left:-300px;     */
   max-width: 100%;
+  text-transform: uppercase;
 }
-/* @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
-  } */
+
 .projects .pul {
   background: url(./reference-image/violet-gradient.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
   text-indent: -9999px;
-  /* z-index: -9999; */
   position: absolute;
   top: 100vw;
   right: 45vw;
@@ -255,24 +189,27 @@ header .main-menu .purple-star {
   margin: 0 10px;
   margin-bottom: 200px;
   position: relative;
-  /* opacity:0;  */
-  /* z-index: -99; */
+  font-size: 2vw;
 }
 
 .projects .project-menu .box img {
-  /* max-width: 33.2%; */
   width: 30.751vw;
-  height: 23.442vw;
-  /* border-radius: 50px; */
+  height: 18.442vw;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.projects .project-menu .project-01 img{
-  height: 20vw;
+.projects .project-menu .project-02 img {
+  width: 33vw;
+}
+.projects .project-menu .project-03 img {
+  height: 25vw;
+}
+.projects .project-menu .box ul li {
+  margin: 1vw;
 }
 .projects .project-menu .box p {
   width: 20vw;
-  font-size: 25px;
+  font-size: 20px;
 }
 .projects .project-menu .row-reverse {
   flex-direction: row-reverse;
@@ -286,67 +223,18 @@ header .main-menu .purple-star {
 .projects .project-menu .row-reverse span {
   transform: scaleX(-1);
 }
-/* .projects .project-menu .box .project-img1{
-    background: url(./reference-image/porject1.png) no-repeat 50% / cover;
-    width: 27.751vw;
-    height: 18.442vw;
-    text-indent: -9999px;
-    z-index: -9999;
-  }
-  .projects .project-menu .box .project-img2{
-    background: url(./reference-image/porject2.png) no-repeat 50% / cover;
-    width: 27.751vw;
-    height: 18.442vw;
-    text-indent: -9999px;
-    z-index: -9999;
-  }
-  .projects .project-menu .box .project-img3{
-    background: url(./reference-image/porject3.png) no-repeat 50% / cover;
-    width: 27.751vw;
-    height: 18.442vw;
-    text-indent: -9999px;
-    z-index: -9999;
-  }
-  .projects .project-menu .box .project-img4{
-    background: url(./reference-image/porject4.png) no-repeat 50% / cover;
-    width: 27.751vw;
-    height: 18.442vw;
-    text-indent: -9999px;
-    z-index: -9999;
-  }
-  .projects .project-menu .box .project-img5{
-    background: url(./reference-image/porject5.png) no-repeat 50% / cover;
-    width: 27.751vw;
-    height: 18.442vw;
-    text-indent: -9999px;
-    z-index: -9999;
-  }
-  .projects .project-menu .box .box-img{
-    border-radius: 50px;
-    position: absolute;
-    top: 4vw;
-    left: 61.5vw;
-  }
-  .projects .project-menu .box .row{
-    border-radius: 50px;
-    position: absolute;
-    top: 4vw;
-    left: 0;
-  }
-  */
 
 /****** technology stack ******/
 .technology {
   margin-top: 480px;
   position: relative;
-  /* z-index: 999; */
 }
 .technology .violet-grad {
   background: url(./reference-image/violet-gradient.png) no-repeat 50% / cover;
   width: 100%;
   height: 100vh;
   text-indent: -9999px;
-  /* z-index: -9999; */
+
   position: absolute;
   top: -35vw;
   right: 50vw;
@@ -354,7 +242,6 @@ header .main-menu .purple-star {
 .technology .violet-grad {
   margin: 0;
   padding: 0;
-  /* z-index: -9999; */
 }
 .technology h3 {
   font-size: clamp(3.125rem, 2.4698rem + 0.8065vw, 3.4375rem);
@@ -366,15 +253,11 @@ header .main-menu .purple-star {
   font-size: clamp(6.5625rem, 3.9415rem + 3.2258vw, 7.8125rem);
   text-align: center;
   padding-bottom: 20px;
-  /* width: 100%; */
-  /* position: relative; */
 }
 .technology .stack {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid #fff; */
-  /* z-index: 99; */
 }
 .technology .stack h4 {
   font-size: 12px;
@@ -393,14 +276,11 @@ header .main-menu .purple-star {
   border-bottom: 1px solid #fff;
 }
 .technology .stack {
-  /* margin-left: 50px; */
-  /* display: none; */
   position: relative;
 }
 .technology .stack .text {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 .technology .stack:hover {
   transform: translateX(-20%);
@@ -502,8 +382,8 @@ footer .about h2 {
 }
 footer .about .about-page {
   background-color: #eeeeee50;
-  max-width: 85vw; /* 1470px */
-  height: 45vw; /* 759px */
+  max-width: 70vw; /* 1470px */
+  height: 35vw; /* 759px */
   margin: 100px auto;
   display: flex;
   justify-content: space-evenly;
@@ -521,8 +401,8 @@ footer .about .about-page .keyword {
   padding: 10px;
   font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
   position: absolute;
-  top: 25vw;
-  left: 20.5%;
+  top: 20vw;
+  left: 6.2vw;
 }
 footer .about .about-page .keyword .key {
   display: flex;

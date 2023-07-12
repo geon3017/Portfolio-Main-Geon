@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./common/fons.css">
   <link rel="stylesheet" href="./common/variable.css">
   <!-- css -->
+  <link rel="stylesheet" href="./common/public.css">
   <link rel="stylesheet" href="./reference.css">
   <!-- js -->
   <script defer src="./reference.js"></script>
@@ -29,31 +30,34 @@
   <!------- menu ------->
   <header>
     <div class="main-menu">
-      <div class="menubox">
-        <div class="boxline">
-          <div class="icon">
-            <ul class="menubox2">
-              <li>icon</li>
-              <li id="closebtn">close</li>
-            </ul>
+      <ul class="sub-menu">
+        <div class="header">
+          <!----- home ----->
+          <div class="name">
+            <a href="#">geon</a>
+          </div>
+          <!----- 로고 ----->
+          <div class="logo">
+            <li class="circle" id="top"></li>
+          </div>
+          <!----- 햄버거메뉴 ----->
+          <div class="hamburger_btn">
+            <label class="container">
+              <input type="checkbox" class="checkbox">
+              <div class="checkmark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
           </div>
         </div>
-        <div class="boxline">
-          <div><a href="#">home</a></div>
-        </div>
-        <div class="boxline">
-          <div><a href="#">project</a></div>
-        </div>
-        <div class="boxline">
-          <div><a href="#">about</a></div>
-        </div>
-      </div>
-      <ul class="sub-menu">
-        <li><a href="#propart">
-            <p>geon</p>
-          </a></li>
-        <li class="circle" id="top"></li>
-        <li id="openbtn"><a href="#">menu</a></li>
+      </ul>
+      <ul class="menu" id="menu">
+        <li><a href="#">home</a></li>
+        <li><a href="#propart" id="project">project</a></li>
+        <li><a href="#about-me" id="about">about</a></li>
+      </ul>
       </ul>
       <div class="main-text">
         <div class="rollingV ani">
@@ -68,7 +72,7 @@
                     <h2>"카멜레온"</h2>
                   </div>
                   <div class="aniText">
-                    <h2>"???"</h2>
+                    <h2>"끝까지 간다"</h2>
                   </div>
                   <div class="aniText">
                     <h2>"노력형"</h2>
@@ -95,7 +99,7 @@
       <div class="arrwo">
         <span><a href="#"><img src="./emoji/arrow-down.svg" alt="화살표 아래로 향해있음"></a></span>
       </div>
-      <div id="pu-star" class="purple-star">보라색별</div>
+      <div id="pu-star" class="purple-star"></div>
     </div>
   </header>
   <!------- projects ------->
@@ -103,40 +107,74 @@
     <div class="pul" id="propart">보라색</div>
     <div class="expl">
       <h2>project</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, amet ex nemo praesentium at facere incidunt
-        consequatur totam ab qui voluptate delectus nihil corrupti unde, obcaecati error iste enim hic!</p>
+      <p>2023.03.08부터 시작해 차근차근 실력 쌓으며 작업한<br>팀포토폴리오, 개인 포토폴리오입니다.</p>
     </div>
     <div class="project-menu">
       <div class="project-01 box">
         <span>화살표</span>
-        <p>레퍼런스 디자인 WEB:D, 리디자인 플레이스테이션 html5,css3로 만든 웹퍼블리싱</p>
-        <a href="https://geon3017.github.io/web-page/"><img src="./reference-image/playstation.png" alt="임시사진"></a>
+        <ul>
+          <li>
+            UIUX 디자인
+          </li>
+          <li>
+            <p>TEAM_1석4조</p>
+          </li>
+          <li>
+            <p>#친환경, #분리수거, #앱디자인</p>
+          </li>
+        </ul>
+        <a href="#"><img src="./reference-image/uiux.png" alt="1석4조팀 UIUX팀작업"></a>
         <!-- <div class="project-img1 box-img">이미지</div> -->
       </div>
       <div class="project-02 box row-reverse">
         <span>화살표</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-        <a href=""><img src="./reference-image/porject2.png" alt="임시사진"></a>
+        <ul>
+          <li>Web-Degin</li>
+          <li>
+            <p>플레이스테이션페이지 리디자인 작업</p>
+          </li>
+          <li>
+            <p>#HTML5, #CSS3</p>
+          </li>
+          <li></li>
+        </ul>
+        <a href="#"><img src="./reference-image/playstation.png" alt="플스메인페이지사진"></a>
         <!-- <div class="project-img2 box-img row">이미지</div> -->
       </div>
       <div class="project-03 box">
         <span>화살표</span>
-        <p>레퍼런스 디자인 카메라 소니, 리디자인 볼보홈페이지 미디어쿼리를 이용한 웹퍼블리싱</p>
-        <a href="https://geon3017.github.io/portfolio_geon/"><img src="./reference-image/volvo.png" alt="임시사진"></a>
-        <!-- <div class="project-img3 box-img">이미지</div> -->
+        <ul>
+          <li>Web-Degin</li>
+          <li>
+            <p>볼보페이지 리디자인 작업</p>
+          </li>
+          <li>
+            <p>#Media Query</p>
+          </li>
+        </ul>
+        <a href="#"><img src="./reference-image/volvo.png" alt="볼보메인페이지사진"></a>
       </div>
       <div class="project-04 box row-reverse">
         <span>화살표</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
-        <img src="./reference-image/porject4.png" alt="임시사진">
-        <!-- <div class="project-img4 box-img row">이미지</div> -->
+        <ul>
+          <li>Web-Degin</li>
+          <li>
+            <p>TEAM_JAVAS</p>
+          </li>
+          <li>
+            <p>베이힐풀앤빌라 리디자인</p>
+          </li>
+          <li>
+            <p>#HTML5, #CSS3, # js&jQuery</p>
+          </li>
+        </ul>
+        <img src="./reference-image/TEAM_JAVAS.png" alt="JAVAS팀작업">
       </div>
-      <div class="project-05 box">
+      <!-- <div class="project-05 box">
         <span>화살표</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptate</p>
+        <p>web-degin</p>
         <img src="./reference-image/porject5.png" alt="임시사진">
-        <!-- <div class="project-img5 box-img">이미지</div> -->
-      </div>
+      </div> -->
     </div>
   </section>
   <!------- technology stack ------->
@@ -212,31 +250,32 @@
   </section>
   <!------- about me ------->
   <footer>
-    <div class="about">
+    <div class="about" id="about-me">
       <h2>about me</h2>
       <div class="about-page">
         <div class="ar-emoji">
-          <p>이미지</p>
+          <p>이미지 선정중</p>
         </div>
         <div class="keyword">
           <ul class="key">
             <li>#왕초보</li>
             <li>#시간준수</li>
-            <li>#찡긋</li>
+            <li>#구글링👍</li>
             <li>#노력</li>
           </ul>
         </div>
         <div class="ab-me">
           <h3>지역: 경기도 평택</h3>
-          <h3>경력</h3>
-          <h3>기타</h3>
+          <h3>기타: 이젠컴퓨터아카테미 23.03.08 ~ 23.08.03</h3>
         </div>
       </div>
     </div>
     <div class="email">
       <div class="email-txt">
         <h3>git hub address</h3>
-        <p>https://github.com/geon3017/portfolio-main-geon</p>
+        <a href="https://github.com/geon3017/portfolio-main-geon">
+          <p>https://github.com/geon3017/portfolio-main-geon</p>
+        </a>
       </div>
     </div>
     <div class="email">

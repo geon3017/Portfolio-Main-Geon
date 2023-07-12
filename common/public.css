@@ -6,33 +6,6 @@
   --ko-font-pr: 'Pretendard Variable', '맑은고딕', sans-serif;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-html {
-  scroll-behavior: smooth;
-}
-
-/***** 위로가기 버튼****/
-.top_btn {
-  width: 45px;
-  height: 45px;
-  background-color: #b3b3b383;
-  text-align: center;
-  line-height: 52px;
-  border-radius: 50%;
-  position: fixed;
-  right: 2vw;
-  bottom: 2vw;
-  z-index: 1111;
-  transition: 0.5s;
-}
-
-.top_btn:hover {
-  background-color: #b3b3b3;
-  transform: translateY(-1vh);
-}
-
 /***** header *****/
 header {
   color: #fff;
@@ -40,7 +13,7 @@ header {
   font-family: var(--en-font);
 }
 
-.header {
+.sub-menu .header {
   padding: 1vh 0 1vh 0;
   display: flex;
   justify-content: space-between;
@@ -60,9 +33,12 @@ header {
 .menu {
   width: 100%;
   height: 90vh;
-  padding: 9vh 0 0 5vw;
+  padding: 10vh 0 0 5vw;
   display: none;
-  background-color: #000;
+  background-color: #191919;
+  text-transform: uppercase;
+  position: fixed; /* 수정부분 */
+  z-index: 1;
 }
 
 .menu li {
@@ -163,11 +139,11 @@ header {
   opacity: 1;
 }
 
-/***** 예약버튼 *****/
-.reservation_btn {
-  font-family: var(--en-font);
-  font-size: 0.833vw;
-  font-weight: 300;
+/***** 이름 *****/
+.name {
+  font-family: var(--main-font);
+  font-size: clamp(2.5rem, -0.121rem + 3.2258vw, 3.75rem);
+  font-weight: 400;
   text-align: center;
   /* width: 8vw; */
   height: 6vh;
@@ -176,67 +152,12 @@ header {
 
   margin: 2px 0 0 0.5vw;
   transition: 0.4s;
+  color: #fff;
+  text-transform: uppercase;
 }
 
-.reservation_btn:hover {
+.name:hover {
   transform: translateY(-7px);
-}
-
-/***** 로고 *****/
-.logo {
-  font-family: var(--en-font);
-  font-weight: 200;
-  font-size: 2.917vw;
-  text-align: center;
-  position: relative;
-}
-
-.logo p:nth-child(1) {
-  margin: 0;
-}
-
-.logo p:nth-child(2) {
-  font-size: 1.25vw;
-  margin: 0;
-}
-/***** 1920 / 1440 / 1400 아래*****/
-.logo::before {
-  content: '';
-  position: absolute;
-  top: 35%;
-
-  /*left: -32vw; /***** -320% -> -32vw *****/
-  /*width: 30vw; /***** 313% -> 30vw *****/
-
-  left: -36vw;
-  width: 35vw;
-
-  height: 1px;
-  background-color: #000;
-}
-
-.logo::after {
-  content: '';
-  position: absolute;
-  top: 35%;
-
-  /*left: 110%; /***** 105% -> 110% *****/
-  /* width: 32vw; /***** 320% -> 32vw *****/
-
-  left: 14vw;
-  width: 37vw;
-
-  height: 1px;
-  background-color: #000;
-}
-/***** 1920 / 1440 / 1400 위*****/
-
-.logo.active::before {
-  background-color: #fff;
-}
-
-.logo.active::after {
-  background-color: #fff;
 }
 
 /***** 햄버거 메뉴*****/
@@ -264,14 +185,14 @@ header {
   position: relative;
   top: 0;
   left: 0;
-  height: 1.3em;
-  width: 1.3em;
+  height: 1.8em;
+  width: 5em;
 }
 
 .checkmark span {
-  width: 32px;
-  height: 2px;
-  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
   position: absolute;
   transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -321,64 +242,4 @@ header {
   transform: translateX(-50px);
   transform: translateX(-50px);
   opacity: 0;
-}
-
-/***** footer *****/
-footer {
-  font-family: var(--en-font);
-  background-color: #000;
-  color: #fff;
-  height: 44vh;
-  width: 100%;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 7vh 0 5vh 0;
-}
-
-/***** footer_logo *****/
-.footer_logo p {
-  font-size: 4.167vw;
-  font-weight: 200;
-}
-
-/***** footer_info *****/
-.footer_info {
-  font-family: var(--ko-font-nn);
-  font-weight: 300;
-  font-size: 0.917vw;
-  line-height: 3;
-}
-
-.footer_info a:last-child {
-  font-weight: 500;
-  width: 11.5vw;
-  cursor: pointer;
-  padding-left: 2px;
-}
-
-.footer_info a:last-child:hover {
-  text-decoration: underline;
-}
-
-/***** copyright *****/
-footer .copyright {
-  font-weight: 300;
-  position: relative;
-  font-size: 0.833vw;
-}
-
-footer .copyright .bold {
-  font-weight: 500;
-}
-
-footer .copyright {
-  border-top: 1px solid #fff;
-}
-
-footer .copyright p {
-  padding: 2vw 12vw;
 }
