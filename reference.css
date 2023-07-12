@@ -311,10 +311,12 @@ header .main-menu .purple-star {
 }
 .technology .stack {
   position: relative;
+  
 }
 .technology .stack .text {
   display: flex;
   justify-content: space-between;
+  margin: 50px 0;
 }
 .technology .stack:hover {
   transform: translateX(-20%);
@@ -323,7 +325,6 @@ header .main-menu .purple-star {
 .technology .stack p {
   position: absolute;
   font-size: clamp(1rem, -0.1794rem + 1.4516vw, 1.5625rem);
-  bottom: 30%;
   right: -1vw;
   display: block;
   opacity: 0;
@@ -335,24 +336,28 @@ header .main-menu .purple-star {
   transform: translateX(-10%);
   transition: 0.7s;
 }
-.technology .stack .text .html5 {
+ .technology .stack .text .html5 {
   right: -1vw;
 }
+*/
 .technology .stack .text .Java {
   right: -3vw;
   bottom: 20%;
-}
+}*/
 .technology .stack .text .Git {
   right: -10vw;
-  bottom: 25%;
+  /* bottom: 25%; */
 }
+/*
 .technology .stack .text .Design {
   right: -2vw;
   bottom: 40%;
-}
+}*/
 .technology .stack .text .Tool {
   right: 10vw;
-}
+  bottom: 5vw;
+  
+} 
 
 /****** Slogan ******/
 * {
