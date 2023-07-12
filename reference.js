@@ -64,7 +64,7 @@ $('#about').on('click', () => {
 
 //***************************************************************** */
 
-// .projects .project-menu 프로젝트 부분
+// .projects .project-menu 프로젝트 fade in부분
 $(document).ready(function () {
   $(window).scroll(function () {
     $('.projects .project-menu .box').each(function (i) {
@@ -79,7 +79,7 @@ $(document).ready(function () {
 });
 
 //********************************************************************** */
-// .projects .expl 목차부분
+// .projects .expl 목차부분 fade in부분
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -100,7 +100,7 @@ $(document).ready(function () {
 
 // 롤링
 jQuery(function ($) {
-  var ticker = function () {
+  let ticker = function () {
     timer = setTimeout(function () {
       $('.rollingV .rolling_box .aniText:first').animate(
         {
@@ -119,7 +119,7 @@ jQuery(function ($) {
   };
 
   //4 마우스를 올렸을 때 기능 정지
-  var tickerover = function () {
+  let tickerover = function () {
     $('.rollingV .rolling_box').mouseover(function () {
       clearTimeout(timer);
     });

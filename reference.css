@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +10,6 @@ body {
   overflow-y: auto;
   background-color: #191919;
   color: #fff;
-  font-family: var(--main-font);
 }
 header {
   position: relative;
@@ -52,13 +53,9 @@ header .main-menu .sub-menu .circle {
     transform: rotate(360deg);
   }
 }
-/***** 메뉴 아래 public.css*****/
+/***** 메뉴  public.css*****/
 
 /**** 아래 롤링 연습 작업 *****/
-* {
-  margin: 0;
-  padding: 0;
-}
 .ani > div {
   font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
   font-weight: 600;
@@ -92,6 +89,34 @@ header .main-menu .sub-menu .circle {
   transform: translateY(0);
   opacity: 1;
 }
+/* #spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #a8dadc;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  72.5% {
+    top: -12.25rem;
+  }
+} */
 /****** 위 롤링연습작업 *****/
 
 header .main-txt {
