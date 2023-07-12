@@ -56,67 +56,76 @@ header .main-menu .sub-menu .circle {
 /***** 메뉴  public.css*****/
 
 /**** 아래 롤링 연습 작업 *****/
-.ani > div {
+/* .ani > div {
   font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
   font-weight: 600;
   margin: 10px 0;
   box-sizing: border-box;
-}
+} */
 
 .rollingV {
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 7vw;
 }
 .rollingV .holl ul {
   display: flex;
-  margin-left: 2.5vw;
+  /* margin-left: 2.5vw; */
 }
-.rollingV .rolling_box {
+/*.rollingV .rolling_box {
   margin-top: 2vw;
   margin-left: 5vw;
   height: 200px;
   overflow: hidden;
   position: relative;
-}
+}*/
 
-.rollingV .rolling_box .aniText {
+/* .rollingV .rolling_box .aniText {
   height: 200px;
   width: 100%;
   transform: translateY(-30px);
-}
+} */
 
-.rollingV .aniText.active h2 {
+/* .rollingV .aniText.active h2 {
   transform: translateY(0);
   opacity: 1;
-}
-/* #spare-time {
-  font-size: 1rem;
-  font-style: italic;
-  letter-spacing: 1rem;
-  margin-top: 0;
-  color: #a8dadc;
+} */
+
+.roller {
+  font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
+  height: 10vw;
+  line-height: 10vw;
+  position: relative;
+  overflow: hidden;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vw 0 0 3vw;
 }
 
 .roller #rolltext {
   position: absolute;
   top: 0;
-  animation: slide 5s infinite;
+  animation: slide 8s infinite;
 }
 
 @keyframes slide {
   0% {
     top: 0;
   }
+
   25% {
-    top: -4rem;
+    top: -10vw;
   }
+
   50% {
-    top: -8rem;
+    top: -10vw;
   }
+
   72.5% {
-    top: -12.25rem;
+    top: -20vw;
   }
-} */
+}
 /****** 위 롤링연습작업 *****/
 
 header .main-txt {

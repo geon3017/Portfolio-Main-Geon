@@ -12,88 +12,51 @@
 
   <title>CSS Text Rolling</title>
   <style>
-    h1 {
-
-      text-align: center;
-
-      text-transform: uppercase;
-
-      color: #f1faee;
-
-      font-size: 4rem;
-
-    }
-
     .roller {
-
-      height: 4.125rem;
-
-      line-height: 4rem;
-
+      font-size: clamp(5.625rem, -2.2379rem + 9.6774vw, 9.375rem);
+      height: 10vw;
+      /* line-height: 4rem; */
       position: relative;
-
       overflow: hidden;
-
       width: 100%;
-
       display: flex;
-
       justify-content: center;
-
       align-items: center;
-
       color: #1d3557;
 
     }
 
     #spare-time {
-
       font-size: 1rem;
-
       font-style: italic;
-
-      letter-spacing: 1rem;
-
+      letter-spacing: 10vw;
       margin-top: 0;
-
       color: #a8dadc;
 
     }
 
     .roller #rolltext {
-
       position: absolute;
-
       top: 0;
-
-      animation: slide 5s infinite;
+      animation: slide 7s infinite;
 
     }
 
     @keyframes slide {
-
       0% {
-
         top: 0;
-
       }
 
       25% {
-
-        top: -4rem;
-
+        top: -10vw;
       }
 
       50% {
-
-        top: -8rem;
-
+        top: -10vw;
       }
 
       72.5% {
-
-        top: -12.25rem;
-
+        top: -20vw;
       }
 
     }
@@ -106,27 +69,13 @@
 <body>
 
   <div class="main">
-
-    <h1>Arnav
-
-      <div class="roller">
-
-        <span id="rolltext">Html
-
-          <br>css
-
-          <br>& js
-
-          <br> <span id="spare-time">creator</span>
-
-        </span>
-
-      </div>
-
-    </h1>
-
+    <div class="roller">
+      <span id="rolltext">도전하는
+        <br>노력
+        <br>카멜레온
+      </span>
+    </div>
   </div>
-
 </body>
 
 </html>

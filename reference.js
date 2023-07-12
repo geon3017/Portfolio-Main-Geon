@@ -99,35 +99,35 @@ $(document).ready(function () {
 //**************************************************************************** */
 
 // 롤링
-jQuery(function ($) {
-  let ticker = function () {
-    timer = setTimeout(function () {
-      $('.rollingV .rolling_box .aniText:first').animate(
-        {
-          marginTop: '130px',
-        },
-        800,
-        function () {
-          $(this)
-            .detach()
-            .appendTo('.rollingV .rolling_box')
-            .removeAttr('style');
-        }
-      );
-      ticker();
-    }, 3000);
-  };
+// jQuery(function ($) {
+//   let ticker = function () {
+//     timer = setTimeout(function () {
+//       $('.rollingV .rolling_box .aniText:first').animate(
+//         {
+//           marginTop: '130px',
+//         },
+//         800,
+//         function () {
+//           $(this)
+//             .detach()
+//             .appendTo('.rollingV .rolling_box')
+//             .removeAttr('style');
+//         }
+//       );
+//       ticker();
+//     }, 3000);
+//   };
 
-  //4 마우스를 올렸을 때 기능 정지
-  let tickerover = function () {
-    $('.rollingV .rolling_box').mouseover(function () {
-      clearTimeout(timer);
-    });
-    $('.rollingV .rolling_box').mouseout(function () {
-      ticker();
-    });
-  };
-  tickerover();
-  // 4 끝
-  ticker();
-});
+//   //4 마우스를 올렸을 때 기능 정지
+//   let tickerover = function () {
+//     $('.rollingV .rolling_box').mouseover(function () {
+//       clearTimeout(timer);
+//     });
+//     $('.rollingV .rolling_box').mouseout(function () {
+//       ticker();
+//     });
+//   };
+//   tickerover();
+//   // 4 끝
+//   ticker();
+// });
