@@ -62,6 +62,10 @@ $('#about').on('click', () => {
   $('.menu').slideToggle();
 });
 
+$('#home').on('click', () => {
+  $('.menu').slideToggle();
+});
+
 //***************************************************************** */
 
 // .projects .project-menu 프로젝트 fade in부분
