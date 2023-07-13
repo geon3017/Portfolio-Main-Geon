@@ -344,11 +344,10 @@ header .main-menu .purple-star {
   right: -10vw;
   /* bottom: 25%; */
 }
-/*
+
 .technology .stack .text .Design {
-  right: -2vw;
-  bottom: 40%;
-}*/
+  top: 4vw;
+}
 .technology .stack .text .Tool {
   right: 10vw;
   bottom: 5vw;
