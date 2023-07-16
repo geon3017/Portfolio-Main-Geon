@@ -371,6 +371,14 @@ header .main-menu .purple-star {
   display: flex;
   animation: flowText 10s linear infinite;
 }
+@keyframes flowText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .leftbox,
 .rightbox {
   width: 50%;
@@ -386,14 +394,6 @@ header .main-menu .purple-star {
   font-weight: 300;
   color: #fff;
   padding: 0 10px;
-}
-@keyframes flowText {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 .grn {
   display: flex;
