@@ -1,9 +1,5 @@
 # portfolio-main-geon
-# https://www.austrine.io/ 레퍼런스 페이지
-### https://makeitwow.io/
-### https://peregrine.io/
-###https://www.therawmaterials.com/
-### https://republic.com/note 기술스택 레퍼런스
+
 # 230619 시작
 # 230619 기본 html작업
 # 230620 어렵다 스타일가이드 작성필요 포트폴리오 설명 페이지 내용
@@ -17,9 +13,9 @@
 # 230624 css완료 내일은 js&jQuery 작성
 # 230624 BoyWithUke [Rockstar]
 # 230625 https://tobiasahlin.com/moving-letters/ (js 텍스트 애니메이션)
-### https://elvanov.com/2195  스크롤에 따라 부드러운 애니메이션 구현하기
-### https://alvarotrigo.com/blog/css-animations-scroll/ 
-### https://nykim.work/56
+## https://elvanov.com/2195  스크롤에 따라 부드러운 애니메이션 구현하기
+## https://alvarotrigo.com/blog/css-animations-scroll/ (스크롤 이벤트)
+### https://nykim.work/56 (스크롤 페이드인 효과)
 ### hover를 부드러운 작용이 안된다....
 ### 230626 https://velog.io/@jsg3121/%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99-%EB%A1%A4%EB%A7%81%ED%9A%A8%EA%B3%BC 롤링스크롤
 ### 230627 다른 방법 롤링 https://codepen.io/yangyj/pen/wvgPYGO
@@ -41,6 +37,5 @@
 ### 230712 기술스택 작성완료 롤링 완료
 ### 230713 폰트 사이즈 내용추가 수정완료
 ### 230713 메인페이지 디자인 완료 설명페이지 디자인 시작
-
-## 230719 프로젝트 링크 추가
+### 230807 마지막 퍼블리싱 작업주소 연결완료
 
